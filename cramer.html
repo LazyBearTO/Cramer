@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Lab test1</title>
+    <meta name="description" content="week5">
+    <meta name="author" content="Joey H Zhao">
+
+</head>
+<body>
+
+    <div id="f7159615"></div>
+
+
+<script>
+
+    var myDiv = document.getElementById("f7159615");
+
+    var a = [];
+    var j = 0;
+    
+    while ( myInput =="" || j < 2 )
+    {
+        //var i = 0;
+       // var a = [];
+        var myInput = prompt('a'+j+',b'+j+',D'+j);
+        a[j] = myInput.split(",");
+
+
+        
+        //i++;
+        
+        //myDiv.innerHTML += i;
+        //myDiv.innerHTML += j;
+        //myDiv.innerHTML += a;
+        //myDiv.innerHTML += "<br />";
+
+        //b[j] =a; 
+        j++;
+        
+
+	}
+ 
+
+
+var d  = a[0][0]*a[1][1]-a[1][0]*a[0][1];
+var dx = a[0][2]*a[1][1]-a[1][2]*a[0][1];
+var dy = a[0][0]*a[1][2]-a[1][0]*a[0][2];
+
+
+
+	
+
+//myDiv.innerHTML += a;
+
+myDiv.innerHTML += a[0][0] + "x" + " + " + a[0][1] + " y =" + a[0][2] +"<br />";
+
+myDiv.innerHTML += a[1][0] + "x" + " + " + a[1][1] + " y =" + a[1][2] +"<br />";
+
+
+//myDiv.innerHTML += d;
+//myDiv.innerHTML += dx;
+myDiv.innerHTML += "x = "+ dx/d;
+myDiv.innerHTML += ",y = " + dy/d;
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

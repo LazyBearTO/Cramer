@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Lab test1</title>
+    <meta name="description" content="week5">
+    <meta name="author" content="Joey H Zhao">
+
+</head>
+<body>
+
+    <div id="f7159615"></div>
+
+
+<script>
+
+    var myDiv = document.getElementById("f7159615");
+
+   // var a = [[3,-2,1,8],[2,5,4,-23],[3,-1,1,3]] ;
+
+   var a = getInput("hint",2);
+
+
+    function getInput(hint,lines){
+
+        var j = 0 ;
+        var a = [];
+        while ( myInput =="" || j < lines )
+        {
+            
+            var myInput = prompt(hint);
+            a[j] = myInput.split(",");
+            j++;
+            
+
+        } 
+    
+
+        
+    return a;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+	
+
+myDiv.innerHTML += a;
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
